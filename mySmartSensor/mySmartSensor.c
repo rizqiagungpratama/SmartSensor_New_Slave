@@ -33,7 +33,7 @@ uint8_t resultDigital=0;
 uint8_t dRaw=0;
 
 void SmartSensor(void){
-	/*	---	*/
+	/*	-----	*/
 	Terima = SPI_SlaveReceive(Kirim);
 	switch(Terima){
 	case 0x00:{
@@ -66,6 +66,7 @@ void SmartSensor(void){
 
 	/* Send low byte sensor 2	*/
 	case 0x06:{
+		
 		myADC_read(2, 0, &SL2, 0);		// only save value to variable SL0
 		Kirim = SL2;
 	}break;
