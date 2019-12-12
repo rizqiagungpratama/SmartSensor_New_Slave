@@ -1,8 +1,8 @@
 main.o: ../main.c ../myADC/myADC.h ../mySPI/mySPI.h ../myUART/myUART.h \
  ../mySmartSensor/mySmartSensor.h \
- E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\myADC/myADC.h \
- E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\myUART/myUART.h \
- E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\mySPI/mySPI.h
+ C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\myADC/myADC.h \
+ C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\myUART/myUART.h \
+ C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\mySPI/mySPI.h
 
 ../myADC/myADC.h:
 
@@ -12,8 +12,8 @@ main.o: ../main.c ../myADC/myADC.h ../mySPI/mySPI.h ../myUART/myUART.h \
 
 ../mySmartSensor/mySmartSensor.h:
 
-E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\myADC/myADC.h:
+C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\myADC/myADC.h:
 
-E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\myUART/myUART.h:
+C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\myUART/myUART.h:
 
-E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\mySPI/mySPI.h:
+C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\mySPI/mySPI.h:

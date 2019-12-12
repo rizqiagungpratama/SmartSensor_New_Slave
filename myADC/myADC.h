@@ -2,7 +2,7 @@
  * myADC.h
  *
  *  Created on: Oct 10, 2019
- *      Author: Andi
+ *      Author: Umroh
  */
 
 #ifndef MYADC_MYADC_H_

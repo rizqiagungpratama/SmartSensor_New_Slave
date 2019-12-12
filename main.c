@@ -2,7 +2,7 @@
  * main.c
  *
  *  Created on: Sep 6, 2019
- *      Author: Andi
+ *      Author: Umroh
  */
 
 #include <avr/io.h>

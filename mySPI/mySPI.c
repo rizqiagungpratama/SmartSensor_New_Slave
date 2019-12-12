@@ -2,7 +2,7 @@
  * mySPI.c
  *
  *  Created on: Oct 10, 2019
- *      Author: Andi
+ *      Author: Umroh
  */
 
 #include <avr/io.h>

@@ -2,7 +2,7 @@
  * myUART.h
  *
  *  Created on: Oct 10, 2019
- *      Author: Andi
+ *      Author: Umroh
  */
 
 #ifndef MYUART_MYUART_H_

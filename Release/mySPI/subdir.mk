@@ -17,7 +17,7 @@ C_DEPS += \
 mySPI/%.o: ../mySPI/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: AVR Compiler'
-	avr-gcc -I"E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\myUART" -I"E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\myADC" -I"E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\mySPI" -I"E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\mySmartSensor" -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega2560 -DF_CPU=16000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	avr-gcc -I"C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\myADC" -I"C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\mySmartSensor" -I"C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\mySPI" -I"C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\myUART" -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega2560 -DF_CPU=16000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

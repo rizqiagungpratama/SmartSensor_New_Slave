@@ -1,6 +1,6 @@
 mySPI/mySPI.o: ../mySPI/mySPI.c ../mySPI/mySPI.h \
- E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\myADC/myADC.h
+ C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\myADC/myADC.h
 
 ../mySPI/mySPI.h:
 
-E:\Projects\Eclipse\SPI_Slave_Sensor_MEGA_V3\myADC/myADC.h:
+C:\Users\ASUS\eclipse-workspace\WML_SmartSensor_Slave\myADC/myADC.h:

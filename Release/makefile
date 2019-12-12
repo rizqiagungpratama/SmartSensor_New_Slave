@@ -34,56 +34,56 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 LSS += \
-SPI_Slave_Sensor_MEGA_V3.lss \
+WML_SmartSensor_Slave.lss \
 
 FLASH_IMAGE += \
-SPI_Slave_Sensor_MEGA_V3.hex \
+WML_SmartSensor_Slave.hex \
 
 EEPROM_IMAGE += \
-SPI_Slave_Sensor_MEGA_V3.eep \
+WML_SmartSensor_Slave.eep \
 
 SIZEDUMMY += \
 sizedummy \
 
 
 # All Target
-all: SPI_Slave_Sensor_MEGA_V3.elf secondary-outputs
+all: WML_SmartSensor_Slave.elf secondary-outputs
 
 # Tool invocations
-SPI_Slave_Sensor_MEGA_V3.elf: $(OBJS) $(USER_OBJS)
+WML_SmartSensor_Slave.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C Linker'
-	avr-gcc -Wl,-Map,SPI_Slave_Sensor_MEGA_V3.map -mmcu=atmega2560 -o "SPI_Slave_Sensor_MEGA_V3.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	avr-gcc -Wl,-Map,WML_SmartSensor_Slave.map -mmcu=atmega2560 -o "WML_SmartSensor_Slave.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-SPI_Slave_Sensor_MEGA_V3.lss: SPI_Slave_Sensor_MEGA_V3.elf
+WML_SmartSensor_Slave.lss: WML_SmartSensor_Slave.elf
 	@echo 'Invoking: AVR Create Extended Listing'
-	-avr-objdump -h -S SPI_Slave_Sensor_MEGA_V3.elf  >"SPI_Slave_Sensor_MEGA_V3.lss"
+	-avr-objdump -h -S WML_SmartSensor_Slave.elf  >"WML_SmartSensor_Slave.lss"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-SPI_Slave_Sensor_MEGA_V3.hex: SPI_Slave_Sensor_MEGA_V3.elf
+WML_SmartSensor_Slave.hex: WML_SmartSensor_Slave.elf
 	@echo 'Create Flash image (ihex format)'
-	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex SPI_Slave_Sensor_MEGA_V3.elf  "SPI_Slave_Sensor_MEGA_V3.hex"
+	-avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex WML_SmartSensor_Slave.elf  "WML_SmartSensor_Slave.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-SPI_Slave_Sensor_MEGA_V3.eep: SPI_Slave_Sensor_MEGA_V3.elf
+WML_SmartSensor_Slave.eep: WML_SmartSensor_Slave.elf
 	@echo 'Create eeprom image (ihex format)'
-	-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex SPI_Slave_Sensor_MEGA_V3.elf  "SPI_Slave_Sensor_MEGA_V3.eep"
+	-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex WML_SmartSensor_Slave.elf  "WML_SmartSensor_Slave.eep"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-sizedummy: SPI_Slave_Sensor_MEGA_V3.elf
+sizedummy: WML_SmartSensor_Slave.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=berkeley -t SPI_Slave_Sensor_MEGA_V3.elf
+	-avr-size --format=berkeley -t WML_SmartSensor_Slave.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(EEPROM_IMAGE)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) SPI_Slave_Sensor_MEGA_V3.elf
+	-$(RM) $(FLASH_IMAGE)$(ELFS)$(OBJS)$(ASM_DEPS)$(EEPROM_IMAGE)$(S_DEPS)$(SIZEDUMMY)$(S_UPPER_DEPS)$(LSS)$(C_DEPS) WML_SmartSensor_Slave.elf
 	-@echo ' '
 
 secondary-outputs: $(LSS) $(FLASH_IMAGE) $(EEPROM_IMAGE) $(SIZEDUMMY)
